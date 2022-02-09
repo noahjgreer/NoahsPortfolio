@@ -1,0 +1,50 @@
+// Basis
+@font-face {
+    font-family: Crete;
+    src: url(../fonts/CreteRound.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Crete;
+    src: url(../fonts/CreteRound-i.ttf);
+    font-style: italic;
+}
+
+@mixin headings {
+    font-weight: normal;
+    font-family: Crete;
+    text-align: center
+}
+
+@mixin roundness {
+    border-radius: 3rem;
+}
+
+// Variables
+$main: #dc3e26;
+// Style
+img {
+    @include roundness;
+    pointer-events: none;
+}
+
+h1 {
+    @include headings;
+}
+
+header {
+    display: flex;
+    img {
+        width: 50%;
+    }
+}
+
+// Media Screening

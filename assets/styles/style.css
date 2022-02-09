@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Crete;
+  src: url(../fonts/CreteRound.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Crete;
+  src: url(../fonts/CreteRound-i.ttf);
+  font-style: italic;
+}
+
+img {
+  border-radius: 3rem;
+  pointer-events: none;
+}
+
+h1 {
+  font-weight: normal;
+  font-family: Crete;
+  text-align: center;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header img {
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */
