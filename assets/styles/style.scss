@@ -28,23 +28,139 @@
     border-radius: 3rem;
 }
 
+@mixin shadow {
+    box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.28);
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.28);
+}
+
 // Variables
 $main: #dc3e26;
+$slate: #252525;
 // Style
+html,
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
 img {
     @include roundness;
+    @include shadow;
     pointer-events: none;
 }
 
 h1 {
     @include headings;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+h2 {
+    @include headings;
+    font-size: 2.35rem;
+}
+
+p {
+    text-indent: 12.5%;
+    font-family: Poppins;
+    font-size: 1.5rem;
+}
+
+article,
+section {
+    margin-inline: 12.5%;
+}
+
+.button {
+    @include roundness;
+    @include shadow;
+    background-color: $main;
+    padding: 1rem;
+    padding-inline: 2rem;
+    text-align: center;
+    width: auto;
+    user-select: none;
+    transition: all 0.25s;
+    font: {
+        family: Poppins;
+        size: 1.5rem;
+    }
+}
+
+.alt {
+    background-color: white;
+    color: $main;
+    font-weight: bold;
+}
+
+.alt:active {
+    background-color: #fccec7;
+}
+
+.button:hover {
+    padding-inline: 3rem;
+}
+
+.button:active {
+    transform: scale(0.95);
+    filter: contrast(1.25);
 }
 
 header {
     display: flex;
+    align-items: center;
+    padding: 3rem;
+    color: white;
+    background: rgb(220, 62, 38);
+    background: linear-gradient(180deg, rgba(220, 62, 38, 1) 80%, rgba(234, 234, 234, 1) 80%, rgba(255, 255, 255, 1) 95%);
     img {
-        width: 50%;
+        margin: 1rem;
+        max-width: 40%;
     }
+    div {
+        h1 {
+            margin: 0px;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        padding-bottom: 10%;
+    }
+}
+
+gallery {
+    display: flex;
+    div {
+        @include shadow;
+        @include roundness;
+        padding: 2rem;
+        background-color: $main;
+        h2 {
+            margin: 0px;
+        }
+    }
+}
+
+separator {
+    width: 120%;
+    z-index: 99;
+    transform: rotate(180deg) scaleX(-1);
+    margin-block: -0.025rem;
+    path {
+        fill: #252525
+    }
+}
+
+.dark {
+    padding-block: 3rem;
+    background-color: $slate;
+    margin: 0px;
+    padding-inline: 12.5%;
+    color: white;
 }
 
 // Media Screening
