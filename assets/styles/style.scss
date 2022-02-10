@@ -20,7 +20,7 @@
 
 @mixin headings {
     font-weight: normal;
-    font-family: Crete;
+    font-family: -apple-system, BlinkMacSystemFont, Crete;
     text-align: center
 }
 
@@ -65,7 +65,7 @@ h2 {
 
 p {
     text-indent: 12.5%;
-    font-family: Poppins;
+    font-family: -apple-system, BlinkMacSystemFont, Poppins;
     font-size: 1.5rem;
 }
 
@@ -85,7 +85,7 @@ section {
     user-select: none;
     transition: all 0.25s;
     font: {
-        family: Poppins;
+        family: -apple-system, BlinkMacSystemFont, Poppins;
         size: 1.5rem;
     }
 }
@@ -112,6 +112,7 @@ section {
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 3rem;
     color: white;
     background: rgb(220, 62, 38);
@@ -164,3 +165,22 @@ separator {
 }
 
 // Media Screening
+//////// Phones
+@media screen and (max-width: 400px) {
+    header {
+        padding-inline: 6.25%;
+        flex-wrap: wrap-reverse;
+        .button {
+            margin-top: 3rem;
+        }
+        img {
+            min-width: 100%;
+        }
+    }
+    article {
+        margin-inline: 10%;
+    }
+    separator {
+        margin-block: -0.05rem;
+    }
+}

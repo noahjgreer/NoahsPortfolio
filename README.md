@@ -5,8 +5,12 @@
 ## Todo
 - [ ] Make Opengraph Elements
 - [ ] Make a description that shows up on Google
+- [ ] Make it automatically load SF fonts on Apple Devices
 
 ## Changelog
+### v0.2.1
+- San Francisco is now being used first on Apple Devices
+- Brought Mobile @media screening up to date. 
 ### v0.2
 - Added color variables
 - Added main page header

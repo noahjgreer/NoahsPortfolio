@@ -40,7 +40,7 @@ img {
 
 h1 {
   font-weight: normal;
-  font-family: Crete;
+  font-family: -apple-system, BlinkMacSystemFont, Crete;
   text-align: center;
   font-size: 5rem;
   font-weight: bold;
@@ -48,14 +48,14 @@ h1 {
 
 h2 {
   font-weight: normal;
-  font-family: Crete;
+  font-family: -apple-system, BlinkMacSystemFont, Crete;
   text-align: center;
   font-size: 2.35rem;
 }
 
 p {
   text-indent: 12.5%;
-  font-family: Poppins;
+  font-family: -apple-system, BlinkMacSystemFont, Poppins;
   font-size: 1.5rem;
 }
 
@@ -80,7 +80,7 @@ section {
           user-select: none;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
-  font-family: Poppins;
+  font-family: -apple-system, BlinkMacSystemFont, Poppins;
   font-size: 1.5rem;
 }
 
@@ -112,6 +112,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 3rem;
   color: white;
   background: #dc3e26;
@@ -180,5 +183,25 @@ separator path {
   margin: 0px;
   padding-inline: 12.5%;
   color: white;
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    padding-inline: 6.25%;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  header .button {
+    margin-top: 3rem;
+  }
+  header img {
+    min-width: 100%;
+  }
+  article {
+    margin-inline: 10%;
+  }
+  separator {
+    margin-block: -0.05rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
