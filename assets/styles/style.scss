@@ -191,11 +191,3 @@ separator {
         margin-block: -0.05rem;
     }
 }
-
-////// Screen readers
-@media speech {
-    separator {
-        display: none;
-        visibility: hidden;
-    }
-}
