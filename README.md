@@ -8,6 +8,8 @@
 - [ ] Make it automatically load SF fonts on Apple Devices
 
 ## Changelog
+### v0.2.3
+- Fixed a few accessibility issues.
 ### v0.2.2
 - Made headings smaller on mobile devices
 ### v0.2.1
