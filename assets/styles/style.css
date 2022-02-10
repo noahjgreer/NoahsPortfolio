@@ -186,6 +186,12 @@ separator path {
 }
 
 @media screen and (max-width: 400px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
   header {
     padding-inline: 6.25%;
     -ms-flex-wrap: wrap-reverse;
@@ -195,6 +201,7 @@ separator path {
     margin-top: 3rem;
   }
   header img {
+    margin-top: 3rem;
     min-width: 100%;
   }
   article {

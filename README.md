@@ -8,6 +8,8 @@
 - [ ] Make it automatically load SF fonts on Apple Devices
 
 ## Changelog
+### v0.2.2
+- Made headings smaller on mobile devices
 ### v0.2.1
 - San Francisco is now being used first on Apple Devices
 - Brought Mobile @media screening up to date. 
